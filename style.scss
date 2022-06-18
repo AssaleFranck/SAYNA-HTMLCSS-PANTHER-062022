@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Panthera';
+    src: url('Assets/Fonts/Panthera/PantheraRegular-MVZ9J.ttf');
+}
+@font-face {
+    font-family: 'Cantarell';
+    src: url('Assets/Fonts/cantarell/Cantarell-Regular.ttf');
+}
+@font-face {
+    font-family: 'Beyno';
+    src: url('Assets/Fonts/beyno/BEYNO.ttf');
+}
+@font-face {
+    font-family: 'Wakanda';
+    src: url('Assets/Fonts/wakanda_forever/WakandaForever-Regular.ttf');
+}
+
+h1 {
+    font-family: 'Panthera';
+    font-size: 68px;
+}
+
+h2 {
+    font-family: 'Beyno';
+    font-size: 32px;
+}
+
+p {
+    font-family: 'Cantarell';
+    font-size: 16px;
+}
+.p_citation {
+    font-family: 'Cantarell';
+    font-size: 14px;
+}
+.p_footer {
+    font-family: 'Cantarell';
+    font-size: 10px;
+}
+
+//color 
+:root {
+    --ivory: #F2CEF2;
+    --silver: #9E91B7;
+    --pink: #DF99F2;
+    --purple: #3D2DA6;
+    --blue: #07338C;
+    --darkblue: #021740;
+}
