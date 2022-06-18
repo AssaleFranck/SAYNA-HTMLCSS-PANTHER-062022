@@ -15,28 +15,6 @@
     src: url('Assets/Fonts/wakanda_forever/WakandaForever-Regular.ttf');
 }
 
-h1 {
-    font-family: 'Panthera';
-    font-size: 68px;
-}
-
-h2 {
-    font-family: 'Beyno';
-    font-size: 32px;
-}
-
-p {
-    font-family: 'Cantarell';
-    font-size: 16px;
-}
-.p_citation {
-    font-family: 'Cantarell';
-    font-size: 14px;
-}
-.p_footer {
-    font-family: 'Cantarell';
-    font-size: 10px;
-}
 
 //color 
 :root {
@@ -47,3 +25,542 @@ p {
     --blue: #07338C;
     --darkblue: #021740;
 }
+
+h1 {
+    font-family: 'Panthera';
+    font-size: 68px;
+}
+
+h2 {
+    font-family: 'Beyno';
+    font-size: 22px;
+    color: var(--silver);
+}
+
+p, a, h5, h4, h3, li {
+    font-family: 'Cantarell';
+    font-size: 16px;
+}
+.citation {
+    font-family: 'Cantarell';
+    font-size: 14px;
+    font-weight: lighter;
+}
+.p_footer {
+    font-family: 'Cantarell';
+    font-size: 10px;
+}
+
+
+
+.w100 {
+    width: 100%;
+}
+.w7 {
+    width: 100%;
+}
+.margin {
+    margin: 0 7.5vw;
+}
+.bg {
+    background: linear-gradient(135deg,#40403b, #081d29) !important;
+}
+
+.d-flex {
+    display: flex;
+}
+.flex_center {
+    justify-content: center;
+    align-items: center;
+
+}
+.flex_between {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flex_end {
+    justify-content: flex-end;
+    align-items: center;
+}
+.flex_start {
+    justify-content: flex-start;
+    align-items: center;
+}
+.flex_around {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex_evenly{
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.d_column {
+    flex-direction: column;
+}
+
+
+
+.border{
+    border: 2px solid #bcbbbd48;
+}
+
+.test {
+    border: 1px solid #fff;
+}
+.test2 {
+    border: 1px solid green;
+}
+.test3 {
+    border: 1px solid yellow;
+}
+.test4 {
+    border: 1px solid red;
+}
+/* -------------------------------------------------------------*/
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('Assets/Illustrations_&_Logo/all_pages/arrière_plan.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section a {
+    text-decoration: underline;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+/* ----------------------------- HEADER ----------------------------- */
+header {
+    @extend .d-flex, .flex_center, .w100;
+    height: 12vh;
+}
+
+nav {
+    @extend .d-flex, .flex_between;
+    width: 90%;
+
+    ul {
+        @extend .d-flex, .flex_between;
+        list-style-type: none;
+        width: 40%;
+        
+        li {
+            text-align: center;
+            font-family: 'Beyno';
+            font-size: 20px;
+            width: 30%;
+            
+            .actif {
+                color: var(--purple);
+                text-decoration: underline;
+            }
+            
+            a{
+                font-weight: normal;
+                text-transform: uppercase;
+                &:hover{
+                    color: var(--purple);
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+/* ----------------------------- sidebar ----------------------------- */
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: 2vw;
+    height: 60vh;
+    width: 1vw;
+    border: 3px solid var(--silver);
+    border-top: none;
+    border-bottom: none;
+    
+    .container {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+    .row {
+        @extend .d-flex, .d_column, .flex_between;
+        position: absolute;
+        height: 30%;
+        width: 100%;
+        bottom: 0;
+        right: -50%;
+        padding-top: 10px;
+        background-color: #0f1828;
+        // background-color: #fff;
+
+        img {
+            width: 100%;
+        }
+    }
+
+} 
+
+//  **************************** BANNER ***************************************
+
+#banner {
+    @extend .d-flex, .flex_start;
+    height: 89vh;
+    padding: 0 8%;
+    background-image: url('Assets/Illustrations_&_Logo/accueil/Pantherhome1..png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 40vw 4vw;
+
+    .container {
+        width: 50%;
+        // @extend .test4;
+
+    }
+
+    h1, h2 {
+        color: var(--silver);
+    }
+    p {
+        width: 90%;
+        margin: 3vh 0;
+    }
+}
+
+
+/* -------------------------------------------------------------*/
+
+
+//  **************************** SLIDE ***************************************
+
+#slide {
+    // @extend .test;
+    height: 40vh;
+    padding-left: 5vw;
+    img {
+        width: 100%;
+        height: 100%
+    }
+
+
+    .container {
+        @extend .d-flex;
+        flex-direction: row;
+        padding-left: 3%;
+        height: 100%;
+        position: relative;
+        background-color: var(--darkblue);
+        
+    }
+    .button {
+        @extend .d-flex, .flex_center;
+        position: absolute;
+        text-align: center;
+        font-weight: bold;
+        font-size: 14px;
+        top: 45%;
+        right: 5%;
+        border-radius: 50%;
+        height: 35px;
+        width: 35px;
+        background: var(--darkblue);
+    }
+
+    .card {
+        // @extend .test3;
+        display: grid;
+        grid-template-columns: 45% 55%;
+        grid-template-rows: 100%;
+        width: 50vw;
+        height: 100%;
+
+        .card_img {
+            @extend .d-flex, .flex_center;
+            // width: 50%;
+        }
+
+        .card_text {
+            padding: 14% 10%;
+            // @extend .d-flex, .flex_center, .test4;
+            // flex-direction: column;
+        }
+
+        .zoom {
+            position: relative;
+            height: 120% !important;
+            // height: auto !important;
+            // width: 25vw;
+        }
+        h2{
+            margin-bottom: 7px;
+        }
+        p, a {
+            font-size: 12px;
+            text-align: justify;
+        }
+    }
+}
+/* -------------------------------------------------------------*/
+
+
+//  **************************** SECTION PRESENTATION ***************************************
+
+#presentation {
+    // @extend .test;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 10vw 6vw;
+}
+article {
+    // @extend .test4;
+    margin-top: 4vw;
+    // width: 50%;
+
+    h2, p {
+        margin-bottom: 1.5vw;
+        text-align: justify;
+    }
+}
+
+.profil {
+    @extend .d-flex, .flex_evenly, .d_column;
+    position: relative;
+
+    .card {
+        @extend .d-flex, .d_column;
+        justify-content: flex-end;
+        align-items: center;
+        width: 80%;
+        height: 90vh;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.822);
+        color: black;
+
+        .card_img {
+            position: relative;
+            // top: -180px;
+        }
+    }
+}
+.card_body {
+    @extend .d-flex, .d_column;
+    justify-content: space-between;
+    margin-bottom: 10%;
+    width: 80%;
+    min-height: 50%;
+
+    h3 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    ul {
+        @extend .d-flex, .flex_between;
+        list-style-type: none;
+
+        li {
+            padding: 0.4em 0.8em;
+            color: #fff;
+            border-radius: 0.3rem;
+            text-align: center;
+            // font-weight: 100;
+            background-color: var(--purple);
+        }
+    }
+}
+
+.id {
+    @extend .d-flex, .d_column;
+    justify-content: space-between;
+    height: 70%;
+}
+
+h4 {
+    font-weight: normal;
+    // color: var(--silver);
+    
+    span {
+        font-weight: bold;
+    }
+    .mini {
+        font-weight: normal;
+        font-size: small;
+    }
+}
+/* -------------------------------------------------------------*/
+
+//  **************************** SECTION NEWSLETTER ***************************************
+
+#newsletter {
+    @extend .d-flex, .flex_center;
+    height: 100vh;
+    background-image: url('Assets/Illustrations_&_Logo/accueil/Pantherhome7.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--darkblue);
+}
+
+#newsletter .container {
+    @extend .d-flex, .flex_between, .d_column;
+    padding: 40px 0;
+    width: 60%;
+    height: 70%;
+    border-radius: 150px;
+    background: linear-gradient(180deg, #fff, #fff, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0));
+}
+
+#newsletter .container {
+
+    h3 {
+        font-size: 36px;
+    }
+}
+
+form {
+    @extend .d-flex, .flex_around, .d_column;
+    height: 80%;
+    width: 50%;
+
+    button {
+        color: var(--darkblue);
+        background-color: var(--ivory);
+        border: none;
+        height: 44px;
+        width: 154px;
+        border-radius: 38px;
+        cursor: pointer;
+        &:hover {
+            box-shadow: 0 0 20px var(--darkblue);
+        }
+    }
+        
+}
+
+textarea {
+    margin: 10px 0;
+}
+
+input, textarea {
+    background: none;
+    border-radius: 38px;
+    outline: none;
+    border: 1px solid var(--darkblue);
+    width: 90%;
+    padding: 14px;
+}
+/* -------------------------------------------------------------*/
+
+
+
+//  **************************** FOOTER ***************************************
+footer {
+    @extend .d-flex, .flex_center;
+    background-image: url('Assets/Illustrations_&_Logo/all_pages/back_footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+
+    // img {
+        
+        // }
+}
+.footer_img {
+    @extend .d-flex, .flex_center;
+    position: relative;
+    // justify-content: center;
+    // align-items: flex-end;
+    height: 75%;
+    width: 25%;
+    
+    // position: relative;
+}
+
+// .bg {
+//     width: 100%;
+// }
+.float {
+    position: absolute;
+    right: 28%;
+    top: 43%;
+    width: 11vw;
+}
+
+footer .container {
+    @extend .d-flex, .d_column, .flex_between;
+    width: 60%;
+    
+}
+.row, .row_2 {
+    width: 80%;
+    // @extend .test4;
+
+}
+
+.row {
+    @extend .d-flex, .flex_between;
+
+    ul {
+        list-style-type: none;
+
+        li {
+            text-transform: uppercase;
+        }
+    }
+    h5 {
+        font-size: 22px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        margin-bottom: 1.5vw;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+}
+.icon {
+    @extend .d-flex, .flex_between;
+}
+
+.row_2 {
+    @extend .d-flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-top: 4vw;
+
+    p , a{
+        font-size: 14px;
+        text-align: center;
+    }
+
+    ul {
+        @extend .d-flex, .flex_evenly;
+        width: 60%;
+    }
+}
+/* -------------------------------------------------------------*/
+
+
+
+//  **************************** ANIMATION ***************************************
+
+
+
+
+/* -------------------------------------------------------------*/

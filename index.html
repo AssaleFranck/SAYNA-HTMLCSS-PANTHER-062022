@@ -11,19 +11,33 @@
     <header>
         <nav>
             <div class="logo">
-                <img src="Assets/Illustrations_&_Logo/all_pages/icon_SAYNA.png" alt=" logo SAYNA">
+                <img src="Assets/Illustrations_&_Logo/all_pages/footer2.png" alt="logo SAYNA & MARVEL">
+                <!-- <img src="Assets/Illustrations_&_Logo/all_pages/icon_SAYNA.png" alt=" logo SAYNA">
                 <img src="Assets/Illustrations_&_Logo/all_pages/icon_x.png" alt="logo x">
-                <img src="Assets/Illustrations_&_Logo/all_pages/icon_MARVEL.png" alt=" logo MARVEL">
+                <img src="Assets/Illustrations_&_Logo/all_pages/icon_MARVEL.png" alt=" logo MARVEL"> -->
             </div>
             <ul>
-                <li>ACCEUIL</li>
-                <li>WAKANDA</li>
-                <li>ENIGME</li>
+                <li ><a href="#" class="actif">ACCEUIL</a></li>
+                <li><a href="#">WAKANDA</a></li>
+                <li><a href="#">ENIGME</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="banener">
+
+        <div class="sidebar">
+            <div class="container">
+                <div class="row">
+                    <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img src="Assets/Illustrations_&_Logo/all_pages/icon_facebook.png" alt="Icon Facebook"></a>
+                    <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img src="Assets/Illustrations_&_Logo/all_pages/icon_instagram.png" alt="Icon Instagram"></a>
+                    <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img src="Assets/Illustrations_&_Logo/all_pages/icon_twitter.png" alt="Icon Twitter"></a>
+                    <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img src="Assets/Illustrations_&_Logo/all_pages/icon_tiktok.png" alt="Icon Tik Tok"></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION BANNER -->
+        <section id="banner">
             <div class="container">
                 <h1>BLACK PANTHER</h1>
                 <h2>WAKANDA FOREVER</h2>
@@ -36,11 +50,17 @@
                 <a href="#">voir plus ></a>
             </div>
         </section>
+
+        <!-- SECTION SLIDE -->
         <section id="slide">
             <div class="container">
+                <span class="button">
+                    >
+                </span>
+                <!-- <input type="button" value=">"> -->
                 <div class="card">
                     <div class="card_img">
-                        <img src="Assets/Illustrations_&_Logo/accueil/Pantherhome2.png" alt="KILLMONGER">
+                        <img class="zoom" src="Assets/Illustrations_&_Logo/accueil/Pantherhome2.png" alt="KILLMONGER">
                     </div>
                     <div class="card_text">
                         <h2>KILLMONGER</h2>
@@ -70,7 +90,7 @@
                         <a href="#">voir plus ></a>
                     </div>
                 </div>
-                <div class="card">
+                <div class="">
                     <div class="card_img">
                         <img src="Assets/Illustrations_&_Logo/accueil/Pantherhome4.png" alt="">
                     </div>
@@ -82,9 +102,12 @@
                 </div>
             </div>
         </section>
-        <section id="prensation">
-                </article>
-                    <div class="section_1">
+
+        <!-- SECTION PRESENTATION -->
+        <section id="presentation">
+            <!-- <div class="text"> -->
+                <article>
+                    <div class="section_1 block">
                         <h2>Naissance d’un prince</h2>
                         <p>
                             T'Challa est né au Wakanda, un pays isolationniste situé en Afrique, du monarque régnant T'Chaka et de sa femme
@@ -109,7 +132,7 @@
                             T'Challa et Zuri
                         </p>
                     </div>
-                    <div class="section_2">
+                    <div class="section_2 block">
                         <h2>un heros vengeur</h2>
                         <p class="citation">
                             « La mort, dans notre culture, n'est pas la fin. Pour nous, c'est plutôt un point de départ. Le défunt n'a qu'à tendre les
@@ -138,7 +161,7 @@
                             - T'Challa et T'Chaka <br>
                         </p>
                     </div>
-                    <div class="section_3">
+                    <div class="section_3 block">
                         <h2>un heros PROTECTEUR ET JUSTICIER</h2>
                         <p class="citation">
                             « Tu as eu tort ! Vous avez tous eu tort ! Il ne fallait pas tourner le dos au reste du monde. Nous avons laissé la peur
@@ -164,76 +187,85 @@
                             erreurs de son père.
                         </p>
                     </div>
-                <article>
-                <div class="profil">
-                    <div class="card">
-                        <div class="card_img">
-                            <img src="Assets/Illustrations_&_Logo/accueil/Pantherhome5.png" alt="Chadwick Boseman">
-                        </div>
-                        <div class="card_body">
-                            <h3>T’Challa</h3>
-                            <ul>
-                                <li>Black Panther </li>
-                                <li>Roi du Wakanda</li>
-                                <li>En vie</li>
-                            </ul>
-                            <div class="id">
-                                <h4>Acteur: <span class="bold"> Chadwick Boseman</span></h4>
-                                <h4>Apparition: <span class="bold">Captain America Civil War (2016)</span></h4>
-                                <h4>Éspèce: <span class="bold">humain</span></h4>
-                                <h4>Nationalité: <span class="bold">Wakandais</span></h4>
-                                <h4>Sexe: <span class="bold">Homme</span></h4>
-                                <h4>Décès: 
-                                    <span class="bold">31 mai 2018</span> 
-                                    <span> (victime du Snap ; ressuscité par Hulk
-                                        en 2023)</span> 
-                                    <span class="bold">(2016)</span>
-                                </h4>
-                                <h4>Réalité: <span class="bold"> Terre-199999</span></h4>
-                            </div>
+                </article>
+            <!-- </div> -->
+            <div class="profil">
+                <div class="card">
+                    <div class="card_img">
+                        <img src="Assets/Illustrations_&_Logo/accueil/Pantherhome5.png" alt="Chadwick Boseman">
+                    </div>
+                    <div class="card_body">
+                        <h3>T’Challa</h3>
+                        <ul>
+                            <li>Black Panther </li>
+                            <li>Roi du Wakanda</li>
+                            <li>En vie</li>
+                        </ul>
+                        <div class="id">
+                            <h4>Acteur: <span> Chadwick Boseman</span></h4>
+                            <h4>Apparition: <span>Captain America Civil War (2016)</span></h4>
+                            <h4>Éspèce: <span>humain</span></h4>
+                            <h4>Nationalité: <span>Wakandais</span></h4>
+                            <h4>Sexe: <span>Homme</span></h4>
+                            <h4>Décès: 
+                                <span>31 mai 2018</span> 
+                                <span class="mini"> (victime du Snap ; ressuscité par Hulk
+                                    en 2023)</span> 
+                                <span>(2016)</span>
+                            </h4>
+                            <h4>Réalité: <span> Terre-199999</span></h4>
                         </div>
                     </div>
-                    <div class="profil_img">
-                        <img src="Assets/Illustrations_&_Logo/accueil/Pantherhome6.png" alt="Black Panther">
-                    </div>
+                </div>
+                <div class="profil_img">
+                    <img src="Assets/Illustrations_&_Logo/accueil/Pantherhome6.png" alt="Black Panther">
                 </div>
             </div>
         </section>
-        <section id="newwsletter">
-            <p>Besoin de l’intervention du Wakanda ?</p>
-            <h3>Contactez nous !</h3>
-            <div class="inputs">
-                <input type="text" placeholder="Nom">
-                <input type="email" name="" id="" placeholder="Email">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                <input type="button" value="ENVOYER">
+
+        <!-- SECTION NEWSLETTER -->
+        <section id="newsletter">
+            <div class="container">
+                <div>
+                    <p>Besoin de l’intervention du Wakanda ?</p>
+                    <h3>Contactez nous !</h3>
+                </div>
+                <form>
+                    <input type="text" placeholder="Nom">
+                    <input type="email" name="" id="" placeholder="Email">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <button type="submit">ENVOYER</button>
+                </form>
             </div>
         </section>
     </main>
     <footer>
+        <!-- <div class="">
+        </div> -->
         <div class="footer_img">
-            <img src="Assets/Illustrations_&_Logo/all_pages/footer2.png" alt="logo SAYNA & MARVEL">
+            <img class="float" src="Assets/Illustrations_&_Logo/all_pages/footer2.png" alt="logo SAYNA & MARVEL">
+            <img src="Assets/Illustrations_&_Logo/all_pages/footer1.png" alt="#">
         </div>
         <div class="container">
             <div class="row">
                 <div class="page_link">
                     <h5>pages</h5>
                     <ul>
-                        <li>à propos</li>
-                        <li>Wakanda</li>
+                        <li><a href="">à propos</a></li>
+                        <li><a href="">Wakanda</a></li>
                     </ul>
                 </div>
                 <div class="reseau">
-                    <h5>RETROUVEZ NOUS</h5>
+                    <h5>retrouvez nous</h5>
                     <div class="icon">
-                        <img src="Assets/Illustrations_&_Logo/all_pages/footer3.png" alt="icon Facebook">
-                        <img src="Assets/Illustrations_&_Logo/all_pages/footer4.png" alt="icon Instagram">
-                        <img src="Assets/Illustrations_&_Logo/all_pages/footer5.png" alt="icon Twitter">
-                        <img src="Assets/Illustrations_&_Logo/all_pages/footer6.png" alt="icon Tik TOk">
+                        <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img src="Assets/Illustrations_&_Logo/all_pages/footer3.png" alt="icon Facebook"></a>
+                        <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img src="Assets/Illustrations_&_Logo/all_pages/footer4.png" alt="icon Instagram"></a>
+                        <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img src="Assets/Illustrations_&_Logo/all_pages/footer5.png" alt="icon Twitter"></a>
+                        <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img src="Assets/Illustrations_&_Logo/all_pages/footer6.png" alt="icon Tik TOk"></a>
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row_2">
                 <p>
                     2022 Tous droits réservés
                     <ul>
