@@ -24,6 +24,7 @@
   --darkblue: #021740;
 }
 
+/* -------------------------------------------------------------*/
 .d-flex, form, #newsletter .container, #newsletter, .id, .card_body ul, .card_body, .profil .card, .profil, #slide .card .card_img, #slide .button, #slide .container, #banner, .sidebar .row, .row_2 ul, .row_2, .icon, .row, footer .container, .footer_img, footer, nav ul, nav, header {
   display: flex;
 }
@@ -119,6 +120,7 @@ a {
   color: #fff;
 }
 
+/* -------------------------------------------------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -127,7 +129,7 @@ a {
 body {
   background-image: url("../Illustrations_&_Logo/all_pages/arrière_plan.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   color: #fff;
 }
 
@@ -222,6 +224,7 @@ footer .container {
 }
 
 /* -------------------------------------------------------------*/
+/* ---------------------------- ANIMATION ---------------------------------*/
 /* -------------------- FOR TEXT --------------------------*/
 p, h1, h2, h3, h4, h6, h5 {
   position: relative;
@@ -233,6 +236,23 @@ p, h1, h2, h3, h4, h6, h5 {
           animation-iteration-count: 1;
 }
 
+@-webkit-keyframes textmove {
+  from {
+    right: 300px;
+  }
+  to {
+    right: 0px;
+  }
+}
+
+@keyframes textmove {
+  from {
+    right: 300px;
+  }
+  to {
+    right: 0px;
+  }
+}
 /* -------------------- FOR HOVER --------------------------*/
 .reseau .icon img:hover {
   filter: grayscale(100%) hue-rotate(200deg);
@@ -246,7 +266,8 @@ p, h1, h2, h3, h4, h6, h5 {
   filter: grayscale(100%) hue-rotate(100deg);
 }
 
-/* -------------------- RESPONSIVE RULES --------------------------*/
+/* -------------------------------------------------------------*/
+/* ----------------------------- RESPONSIVE RULES -----------------------------------*/
 /* ------------- HEADER -------------*/
 @media (min-width: 320px) and (max-width: 728px) {
   header .logo {
@@ -353,6 +374,7 @@ img {
   width: 100%;
 }
 
+/* ---------------------------- SECTION BANNER ---------------------------------*/
 #banner {
   height: 89vh;
   padding: 0 8%;
@@ -360,15 +382,19 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 40vw 4vw;
+  margin-bottom: 10vw;
 }
 #banner .container {
   width: 50%;
+}
+#banner h1 {
+  font-size: 50px !important;
 }
 #banner h1, #banner h2 {
   color: var(--silver);
 }
 #banner p {
-  width: 90%;
+  width: 80%;
   margin: 3vh 0;
 }
 
@@ -423,6 +449,7 @@ img {
 }
 
 /* -------------------------------------------------------------*/
+/* ----------------------------- SECTION PRESENTATION --------------------------------*/
 #presentation {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -491,6 +518,7 @@ h4 .mini {
 }
 
 /* -------------------------------------------------------------*/
+/* ------------------------------- SECTION NEWSLETTER ------------------------------*/
 #newsletter {
   height: 100vh;
   background-image: url("../Illustrations_&_Logo/accueil/Pantherhome7.png");
@@ -542,4 +570,51 @@ input, textarea {
 }
 
 /* -------------------------------------------------------------*/
+/* -------------------------- RESPONSIVE RULES ---------------------------------*/
+/* ---------------- SECTION BANNER ------------------*/
+@media (min-width: 768px) and (max-width: 1440px) {
+  #banner {
+    background-size: 80%;
+    background-position: 33vw 4vw;
+  }
+  #banner h1 {
+    font-size: 5vw;
+    margin-bottom: 10px;
+  }
+  #banner p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  #banner {
+    align-items: flex-start;
+    background-size: 80%;
+    background-position: 33vw 4vw;
+    padding: 0 6%;
+  }
+  #banner .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 14vw;
+    width: 100%;
+    height: 50%;
+  }
+  #banner h1 {
+    font-size: 5vw !important;
+    margin-bottom: 10px;
+  }
+  #banner h2 {
+    font-size: 3vw;
+  }
+  #banner p {
+    margin-top: 30px;
+    font-size: 14px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  #banner .container {
+    height: 70%;
+  }
+}
 /* -------------------------------------------------------------*//*# sourceMappingURL=style.css.map */

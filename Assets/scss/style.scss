@@ -16,6 +16,7 @@ img {
 }
 
 /* ----------------------------- sidebar ----------------------------- */
+
 .sidebar {
     position: absolute;
     top: 0;
@@ -31,6 +32,7 @@ img {
         height: 100%;
         width: 100%;
     }
+
     .row {
         @extend .d-flex, .d_column, .flex_between;
         position: absolute;
@@ -40,7 +42,6 @@ img {
         right: -50%;
         padding-top: 10px;
         background-color: #0f1828;
-        // background-color: #fff;
 
         img {
             width: 100%;
@@ -49,7 +50,7 @@ img {
 
 } 
 
-//  **************************** BANNER ***************************************
+/* ---------------------------- SECTION BANNER ---------------------------------*/
 
 #banner {
     @extend .d-flex, .flex_start;
@@ -59,18 +60,22 @@ img {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 40vw 4vw;
+    margin-bottom: 10vw;
 
     .container {
         width: 50%;
-        // @extend .test4;
+    }
 
+    h1 {
+        font-size: 50px !important;
     }
 
     h1, h2 {
         color: var(--silver);
     }
+
     p {
-        width: 90%;
+        width: 80%;
         margin: 3vh 0;
     }
 }
@@ -82,14 +87,13 @@ img {
 //  **************************** SLIDE ***************************************
 
 #slide {
-    // @extend .test;
     height: 40vh;
     padding-left: 5vw;
+
     img {
         width: 100%;
         height: 100%
     }
-
 
     .container {
         @extend .d-flex;
@@ -98,8 +102,8 @@ img {
         height: 100%;
         position: relative;
         background-color: var(--darkblue);
-        
     }
+
     .button {
         @extend .d-flex, .flex_center;
         position: absolute;
@@ -115,7 +119,6 @@ img {
     }
 
     .card {
-        // @extend .test3;
         display: grid;
         grid-template-columns: 45% 55%;
         grid-template-rows: 100%;
@@ -124,24 +127,21 @@ img {
 
         .card_img {
             @extend .d-flex, .flex_center;
-            // width: 50%;
         }
 
         .card_text {
             padding: 14% 10%;
-            // @extend .d-flex, .flex_center, .test4;
-            // flex-direction: column;
         }
 
         .zoom {
             position: relative;
             height: 120% !important;
-            // height: auto !important;
-            // width: 25vw;
         }
+
         h2{
             margin-bottom: 7px;
         }
+
         p, a {
             font-size: 12px;
             text-align: justify;
@@ -151,18 +151,16 @@ img {
 /* -------------------------------------------------------------*/
 
 
-//  **************************** SECTION PRESENTATION ***************************************
+/* ----------------------------- SECTION PRESENTATION --------------------------------*/
 
 #presentation {
-    // @extend .test;
     display: grid;
     grid-template-columns: 50% 50%;
     margin: 10vw 6vw;
 }
+
 article {
-    // @extend .test4;
     margin-top: 4vw;
-    // width: 50%;
 
     h2, p {
         margin-bottom: 1.5vw;
@@ -186,10 +184,10 @@ article {
 
         .card_img {
             position: relative;
-            // top: -180px;
         }
     }
 }
+
 .card_body {
     @extend .d-flex, .d_column;
     justify-content: space-between;
@@ -211,7 +209,6 @@ article {
             color: #fff;
             border-radius: 0.3rem;
             text-align: center;
-            // font-weight: 100;
             background-color: var(--purple);
         }
     }
@@ -225,11 +222,11 @@ article {
 
 h4 {
     font-weight: normal;
-    // color: var(--silver);
     
     span {
         font-weight: bold;
     }
+
     .mini {
         font-weight: normal;
         font-size: small;
@@ -237,7 +234,8 @@ h4 {
 }
 /* -------------------------------------------------------------*/
 
-//  **************************** SECTION NEWSLETTER ***************************************
+
+/* ------------------------------- SECTION NEWSLETTER ------------------------------*/
 
 #newsletter {
     @extend .d-flex, .flex_center;
@@ -299,10 +297,71 @@ input, textarea {
 /* -------------------------------------------------------------*/
 
 
+/* -------------------------- RESPONSIVE RULES ---------------------------------*/
 
-//  **************************** ANIMATION ***************************************
 
 
+/* ---------------- SECTION BANNER ------------------*/
+
+@media (min-width: 768px) and (max-width: 1440px) {
+    
+    #banner {
+        background-size: 80%;
+        background-position: 33vw 4vw;
+
+        h1 {
+            font-size: 5vw;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    #banner {
+        align-items: flex-start;
+        background-size: 80%;
+        background-position: 33vw 4vw;
+        padding: 0 6%;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-top: 14vw;
+            width: 100%;
+            height: 50%;
+        }
+
+        h1 {
+            font-size: 5vw !important;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 3vw;
+        }
+        
+        p {
+            margin-top: 30px;
+            font-size: 14px;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    #banner  {
+
+        .container {
+            height: 70%;
+        }
+    }
+}
 
 
 /* -------------------------------------------------------------*/

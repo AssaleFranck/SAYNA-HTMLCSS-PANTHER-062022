@@ -26,6 +26,9 @@
 }
 
 
+/* -------------------------------------------------------------*/
+
+
 .d-flex {
     display: flex;
 }
@@ -98,11 +101,13 @@ p, a, h5, h4, h3, li {
     font-family: 'Cantarell';
     font-size: 16px;
 }
+
 .citation {
     font-family: 'Cantarell';
     font-size: 14px;
     font-weight: lighter;
 }
+
 .p_footer {
     font-family: 'Cantarell';
     font-size: 10px;
@@ -113,6 +118,10 @@ a {
     color: #fff;
 }
 
+/* -------------------------------------------------------------*/
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -121,12 +130,13 @@ a {
 body {
     background-image: url('../Illustrations_&_Logo/all_pages/arrière_plan.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     color: #fff;
 }
 
 
 /* ----------------------------- HEADER ----------------------------- */
+
 header {
     @extend .d-flex, .flex_center, .w100;
     height: 12vh;
@@ -167,6 +177,7 @@ nav {
 
 
 /* ----------------------------- FOOTER ----------------------------- */
+
 footer {
     @extend .d-flex, .flex_center;
     background-image: url('../Illustrations_&_Logo/all_pages/back_footer.png');
@@ -192,8 +203,8 @@ footer {
 footer .container {
     @extend .d-flex, .d_column, .flex_between;
     width: 60%;
-    
 }
+
 .row, .row_2 {
     width: 80%;
 }
@@ -208,16 +219,19 @@ footer .container {
             text-transform: uppercase;
         }
     }
+
     h5 {
         font-size: 22px;
         text-transform: uppercase;
         letter-spacing: 5px;
         margin-bottom: 1.5vw;
     }
+
     a:hover{
         text-decoration: underline;
     }
 }
+
 .icon {
     @extend .d-flex, .flex_between;
 }
@@ -240,8 +254,8 @@ footer .container {
 }
 /* -------------------------------------------------------------*/
 
-// *********************** ANIMATION *****************************
 
+/* ---------------------------- ANIMATION ---------------------------------*/
 
 
 /* -------------------- FOR TEXT --------------------------*/
@@ -251,50 +265,53 @@ p, h1, h2, h3, h4, h6, h5 {
     animation-name: textmove;
     animation-duration: 4s;
     animation-iteration-count: 1;
-    // animation-delay: 2s;
 }
 
-// @keyframes textmove {
-//     from {right: 300px;}
-//     to {right: 0px;}
-// }
+@keyframes textmove {
+    from {right: 300px;}
+    to {right: 0px;}
+}
 
 /* -------------------- FOR HOVER --------------------------*/
 
 .reseau .icon {
-    img {
-        &:hover {
-            filter: grayscale(100%) hue-rotate(200deg);;
-        }
+
+    img:hover {
+        filter: grayscale(100%) hue-rotate(200deg);
     }
 }
 
 .sidebar .container .row{
-    img {
-        &:hover {
-            filter: grayscale(0%) hue-rotate(100deg) contrast(2000%);
-        }
+
+    img:hover {
+        filter: grayscale(0%) hue-rotate(100deg) contrast(2000%);
     }
 }
 
 .logo {
-    img {
-        &:hover{
-            filter: grayscale(100%) hue-rotate(100deg);
-        }
+
+    img:hover {
+        filter: grayscale(100%) hue-rotate(100deg);
     }
 }
 
-/* -------------------- RESPONSIVE RULES --------------------------*/
+/* -------------------------------------------------------------*/
+
+
+
+
+/* ----------------------------- RESPONSIVE RULES -----------------------------------*/
 
 
 /* ------------- HEADER -------------*/
 
-@media (min-width: 320px) and (max-width: 728px){
+@media (min-width: 320px) and (max-width: 728px) {
     
     header {
+
         .logo {
             width: 30%;
+
             img {
                 width: 100%;
             }
@@ -302,7 +319,6 @@ p, h1, h2, h3, h4, h6, h5 {
     }
      
     nav ul {
-        // border: 1px solid red;
         width: 60%;
 
         a {
@@ -315,19 +331,22 @@ p, h1, h2, h3, h4, h6, h5 {
 /* ------------- Footer -------------*/
 
 @media (min-width: 320px) and (max-width: 768px) {
+
     footer {
         display: flex;
         flex-direction: column;
         height: auto;
-
     }
+
     .footer_img {
         width: 100%;
         height: 50vh;
+
         img {
             max-width: 80%;
             max-height: 100%;
         }
+
         .float {
             width: 20vw;
             right: 40%;
@@ -345,6 +364,7 @@ p, h1, h2, h3, h4, h6, h5 {
 
         .row {
             flex-direction: column;
+
             .reseau {
                 margin-top: 20px;
             }
@@ -362,7 +382,6 @@ p, h1, h2, h3, h4, h6, h5 {
 @media (min-width: 769px) and (max-width: 1025px) {
 
     .row_2 {
-        // width: 10;
         align-items: center;
         flex-direction: column;
 

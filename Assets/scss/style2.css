@@ -24,6 +24,7 @@
   --darkblue: #021740;
 }
 
+/* -------------------------------------------------------------*/
 .d-flex, .left, .right, #history .container, #banner, .row_2 ul, .row_2, .icon, .row, footer .container, .footer_img, footer, nav ul, nav, header {
   display: flex;
 }
@@ -119,6 +120,7 @@ a {
   color: #fff;
 }
 
+/* -------------------------------------------------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -127,7 +129,7 @@ a {
 body {
   background-image: url("../Illustrations_&_Logo/all_pages/arrière_plan.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   color: #fff;
 }
 
@@ -222,6 +224,7 @@ footer .container {
 }
 
 /* -------------------------------------------------------------*/
+/* ---------------------------- ANIMATION ---------------------------------*/
 /* -------------------- FOR TEXT --------------------------*/
 p, h1, h2, h3, h4, h6, h5 {
   position: relative;
@@ -233,6 +236,23 @@ p, h1, h2, h3, h4, h6, h5 {
           animation-iteration-count: 1;
 }
 
+@-webkit-keyframes textmove {
+  from {
+    right: 300px;
+  }
+  to {
+    right: 0px;
+  }
+}
+
+@keyframes textmove {
+  from {
+    right: 300px;
+  }
+  to {
+    right: 0px;
+  }
+}
 /* -------------------- FOR HOVER --------------------------*/
 .reseau .icon img:hover {
   filter: grayscale(100%) hue-rotate(200deg);
@@ -246,7 +266,8 @@ p, h1, h2, h3, h4, h6, h5 {
   filter: grayscale(100%) hue-rotate(100deg);
 }
 
-/* -------------------- RESPONSIVE RULES --------------------------*/
+/* -------------------------------------------------------------*/
+/* ----------------------------- RESPONSIVE RULES -----------------------------------*/
 /* ------------- HEADER -------------*/
 @media (min-width: 320px) and (max-width: 728px) {
   header .logo {
@@ -318,7 +339,7 @@ body {
 }
 
 /* -------------------------------------------------------------*/
-/* ----------------------------- BANNER ----------------------------- */
+/* ----------------------------- SECTION BANNER ----------------------------- */
 #banner {
   height: 90vh;
   padding: 0 10%;
