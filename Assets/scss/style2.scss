@@ -60,9 +60,9 @@ body {
     height: 340vh;
 
     .container {
+        @extend .d-flex, .flex_evenly;
         width: 100%;
         height: 100%;
-        @extend .d-flex, .flex_evenly;
 
     }
 }
