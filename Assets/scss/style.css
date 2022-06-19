@@ -1,19 +1,19 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Panthera";
-  src: url("Assets/Fonts/Panthera/PantheraRegular-MVZ9J.ttf");
+  src: url("../Fonts/Panthera/PantheraRegular-MVZ9J.ttf");
 }
 @font-face {
   font-family: "Cantarell";
-  src: url("Assets/Fonts/cantarell/Cantarell-Regular.ttf");
+  src: url("../Fonts/cantarell/Cantarell-Regular.ttf");
 }
 @font-face {
   font-family: "Beyno";
-  src: url("Assets/Fonts/beyno/BEYNO.ttf");
+  src: url("../Fonts/beyno/BEYNO.ttf");
 }
 @font-face {
   font-family: "Wakanda";
-  src: url("Assets/Fonts/wakanda_forever/WakandaForever-Regular.ttf");
+  src: url("../Fonts/wakanda_forever/WakandaForever-Regular.ttf");
 }
 :root {
   --ivory: #F2CEF2;
@@ -22,6 +22,69 @@
   --purple: #3D2DA6;
   --blue: #07338C;
   --darkblue: #021740;
+}
+
+.d-flex, form, #newsletter .container, #newsletter, .id, .card_body ul, .card_body, .profil .card, .profil, #slide .card .card_img, #slide .button, #slide .container, #banner, .sidebar .row, .row_2 ul, .row_2, .icon, .row, footer .container, .footer_img, footer, nav ul, nav, header {
+  display: flex;
+}
+
+.flex_center, #newsletter, #slide .card .card_img, #slide .button, .footer_img, footer, header {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex_between, #newsletter .container, .card_body ul, .sidebar .row, .icon, .row, footer .container, nav ul, nav {
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex_end {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flex_start, #banner {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex_around, form {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex_evenly, .profil, .row_2 ul {
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.d_column, form, #newsletter .container, .id, .card_body, .profil .card, .profil, .sidebar .row, footer .container {
+  flex-direction: column;
+}
+
+.w100, header {
+  width: 100%;
+}
+
+.border {
+  border: 2px solid rgba(188, 187, 189, 0.2823529412);
+}
+
+.test {
+  border: 1px solid #fff;
+}
+
+.test2 {
+  border: 1px solid green;
+}
+
+.test3 {
+  border: 1px solid yellow;
+}
+
+.test4 {
+  border: 1px solid red;
 }
 
 h1 {
@@ -51,106 +114,21 @@ p, a, h5, h4, h3, li {
   font-size: 10px;
 }
 
-.w100, header {
-  width: 100%;
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
-.w7 {
-  width: 100%;
-}
-
-.margin {
-  margin: 0 7.5vw;
-}
-
-.bg {
-  background: linear-gradient(135deg, #40403b, #081d29) !important;
-}
-
-.d-flex, .row_2 ul, .row_2, .icon, .row, footer .container, .footer_img, footer, form, #newsletter .container, #newsletter, .id, .card_body ul, .card_body, .profil .card, .profil, #slide .card .card_img, #slide .button, #slide .container, #banner, .sidebar .row, nav ul, nav, header {
-  display: flex;
-}
-
-.flex_center, .footer_img, footer, #newsletter, #slide .card .card_img, #slide .button, header {
-  justify-content: center;
-  align-items: center;
-}
-
-.flex_between, .icon, .row, footer .container, #newsletter .container, .card_body ul, .sidebar .row, nav ul, nav {
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.flex_end {
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.flex_start, #banner {
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.flex_around, form {
-  justify-content: space-around;
-  align-items: center;
-}
-
-.flex_evenly, .row_2 ul, .profil {
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.d_column, footer .container, form, #newsletter .container, .id, .card_body, .profil .card, .profil, .sidebar .row {
-  flex-direction: column;
-}
-
-.border {
-  border: 2px solid rgba(188, 187, 189, 0.2823529412);
-}
-
-.test {
-  border: 1px solid #fff;
-}
-
-.test2 {
-  border: 1px solid green;
-}
-
-.test3 {
-  border: 1px solid yellow;
-}
-
-.test4 {
-  border: 1px solid red;
-}
-
-/* -------------------------------------------------------------*/
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-image: url("Assets/Illustrations_&_Logo/all_pages/arrière_plan.png");
+  background-image: url("../Illustrations_&_Logo/all_pages/arrière_plan.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
-}
-
-a {
-  text-decoration: none;
-  color: #fff;
-}
-
-section a {
-  text-decoration: underline;
-  text-align: center;
-}
-
-img {
-  max-width: 100%;
 }
 
 /* ----------------------------- HEADER ----------------------------- */
@@ -182,6 +160,80 @@ nav ul li a {
 nav ul li a:hover {
   color: var(--purple);
   text-decoration: underline;
+}
+
+/* ------------------------------------------------------------------ */
+/* ----------------------------- FOOTER ----------------------------- */
+footer {
+  background-image: url("../Illustrations_&_Logo/all_pages/back_footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+
+.footer_img {
+  position: relative;
+  height: 75%;
+  width: 25%;
+}
+
+.float {
+  position: absolute;
+  right: 28%;
+  top: 43%;
+  width: 11vw;
+}
+
+footer .container {
+  width: 60%;
+}
+
+.row, .row_2 {
+  width: 80%;
+}
+
+.row ul {
+  list-style-type: none;
+}
+.row ul li {
+  text-transform: uppercase;
+}
+.row h5 {
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 1.5vw;
+}
+.row a:hover {
+  text-decoration: underline;
+}
+
+.row_2 {
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-top: 4vw;
+}
+.row_2 p, .row_2 a {
+  font-size: 14px;
+  text-align: center;
+}
+.row_2 ul {
+  width: 60%;
+}
+
+/* -------------------------------------------------------------*/
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+section a {
+  text-decoration: underline;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
 }
 
 /* ----------------------------- sidebar ----------------------------- */
@@ -216,7 +268,7 @@ nav ul li a:hover {
 #banner {
   height: 89vh;
   padding: 0 8%;
-  background-image: url("Assets/Illustrations_&_Logo/accueil/Pantherhome1..png");
+  background-image: url("../Illustrations_&_Logo/accueil/Pantherhome1.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 40vw 4vw;
@@ -353,7 +405,7 @@ h4 .mini {
 /* -------------------------------------------------------------*/
 #newsletter {
   height: 100vh;
-  background-image: url("Assets/Illustrations_&_Logo/accueil/Pantherhome7.png");
+  background-image: url("../Illustrations_&_Logo/accueil/Pantherhome7.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--darkblue);
@@ -399,64 +451,6 @@ input, textarea {
   border: 1px solid var(--darkblue);
   width: 90%;
   padding: 14px;
-}
-
-/* -------------------------------------------------------------*/
-footer {
-  background-image: url("Assets/Illustrations_&_Logo/all_pages/back_footer.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 80vh;
-}
-
-.footer_img {
-  position: relative;
-  height: 75%;
-  width: 25%;
-}
-
-.float {
-  position: absolute;
-  right: 28%;
-  top: 43%;
-  width: 11vw;
-}
-
-footer .container {
-  width: 60%;
-}
-
-.row, .row_2 {
-  width: 80%;
-}
-
-.row ul {
-  list-style-type: none;
-}
-.row ul li {
-  text-transform: uppercase;
-}
-.row h5 {
-  font-size: 22px;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  margin-bottom: 1.5vw;
-}
-.row a:hover {
-  text-decoration: underline;
-}
-
-.row_2 {
-  justify-content: flex-start;
-  align-items: flex-end;
-  margin-top: 4vw;
-}
-.row_2 p, .row_2 a {
-  font-size: 14px;
-  text-align: center;
-}
-.row_2 ul {
-  width: 60%;
 }
 
 /* -------------------------------------------------------------*/

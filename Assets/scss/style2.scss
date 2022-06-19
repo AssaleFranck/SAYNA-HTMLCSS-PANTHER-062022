@@ -1,0 +1,109 @@
+@import '_partial';
+
+
+body {
+    background-image: url('../Illustrations_&_Logo/all_pages/arrière_plan.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+/* -------------------------------------------------------------*/
+
+
+
+/* ----------------------------- BANNER ----------------------------- */
+#banner {
+    @extend .d-flex, .flex_start;
+    // height: 89vh;
+    height: 90vh;
+    padding: 0 10%;
+    background-image: url('../Illustrations_&_Logo/Wakanda/Pantherwakanda1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left 4vw center;
+    
+    h1, h2 {
+        color: var(--silver);
+        
+    }
+
+    h1 {
+        font-family: 'Beyno';
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-family: 'Wakanda';
+        font-size: 43px;
+        margin-bottom: 3vw;
+    }
+
+    p {
+        width: 40%;
+        text-align: justify;
+        // color: var(--ivory);
+    }
+}
+/* ------------------------------------------------------------------ */
+
+
+/* ----------------------------- ARTICLES ----------------------------- */
+#history {
+    // @extend .test2;
+    padding: 8vw 0;
+    background: url('../Illustrations_&_Logo/Wakanda/Pantherwakanda2.png');
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    margin: 10px 0;
+    height: 340vh;
+
+    .container {
+        width: 100%;
+        height: 100%;
+        @extend .d-flex, .flex_evenly;
+
+    }
+}
+.left, .right {
+    @extend .d-flex, .flex_between, .d_column;
+    width: 40%;
+    height: 100%;
+    
+    // .b1 {
+    //     @extend .test3;
+    //     margin-bottom: 0;
+    // }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 10px;
+        text-align: justify;
+    }
+    .list{
+        text-align: start;
+    }
+}
+
+
+iframe {
+    width: 100%;
+    margin: 0;
+
+}
+
+.illustration {
+    width: 100%;
+    
+    img {
+        width: 100%;
+    }
+}
+
+
+/* ------------------------------------------------------------------ */
+

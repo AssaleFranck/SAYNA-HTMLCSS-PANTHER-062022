@@ -1,139 +1,5 @@
-@font-face {
-    font-family: 'Panthera';
-    src: url('Assets/Fonts/Panthera/PantheraRegular-MVZ9J.ttf');
-}
-@font-face {
-    font-family: 'Cantarell';
-    src: url('Assets/Fonts/cantarell/Cantarell-Regular.ttf');
-}
-@font-face {
-    font-family: 'Beyno';
-    src: url('Assets/Fonts/beyno/BEYNO.ttf');
-}
-@font-face {
-    font-family: 'Wakanda';
-    src: url('Assets/Fonts/wakanda_forever/WakandaForever-Regular.ttf');
-}
+@import '_partial';
 
-
-//color 
-:root {
-    --ivory: #F2CEF2;
-    --silver: #9E91B7;
-    --pink: #DF99F2;
-    --purple: #3D2DA6;
-    --blue: #07338C;
-    --darkblue: #021740;
-}
-
-h1 {
-    font-family: 'Panthera';
-    font-size: 68px;
-}
-
-h2 {
-    font-family: 'Beyno';
-    font-size: 22px;
-    color: var(--silver);
-}
-
-p, a, h5, h4, h3, li {
-    font-family: 'Cantarell';
-    font-size: 16px;
-}
-.citation {
-    font-family: 'Cantarell';
-    font-size: 14px;
-    font-weight: lighter;
-}
-.p_footer {
-    font-family: 'Cantarell';
-    font-size: 10px;
-}
-
-
-
-.w100 {
-    width: 100%;
-}
-.w7 {
-    width: 100%;
-}
-.margin {
-    margin: 0 7.5vw;
-}
-.bg {
-    background: linear-gradient(135deg,#40403b, #081d29) !important;
-}
-
-.d-flex {
-    display: flex;
-}
-.flex_center {
-    justify-content: center;
-    align-items: center;
-
-}
-.flex_between {
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.flex_end {
-    justify-content: flex-end;
-    align-items: center;
-}
-.flex_start {
-    justify-content: flex-start;
-    align-items: center;
-}
-.flex_around {
-    justify-content: space-around;
-    align-items: center;
-}
-
-.flex_evenly{
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.d_column {
-    flex-direction: column;
-}
-
-
-
-.border{
-    border: 2px solid #bcbbbd48;
-}
-
-.test {
-    border: 1px solid #fff;
-}
-.test2 {
-    border: 1px solid green;
-}
-.test3 {
-    border: 1px solid yellow;
-}
-.test4 {
-    border: 1px solid red;
-}
-/* -------------------------------------------------------------*/
-
-
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-image: url('Assets/Illustrations_&_Logo/all_pages/arrière_plan.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff;
-}
 
 a {
     text-decoration: none;
@@ -148,43 +14,7 @@ section a {
 img {
     max-width: 100%;
 }
-/* ----------------------------- HEADER ----------------------------- */
-header {
-    @extend .d-flex, .flex_center, .w100;
-    height: 12vh;
-}
 
-nav {
-    @extend .d-flex, .flex_between;
-    width: 90%;
-
-    ul {
-        @extend .d-flex, .flex_between;
-        list-style-type: none;
-        width: 40%;
-        
-        li {
-            text-align: center;
-            font-family: 'Beyno';
-            font-size: 20px;
-            width: 30%;
-            
-            .actif {
-                color: var(--purple);
-                text-decoration: underline;
-            }
-            
-            a{
-                font-weight: normal;
-                text-transform: uppercase;
-                &:hover{
-                    color: var(--purple);
-                    text-decoration: underline;
-                }
-            }
-        }
-    }
-}
 /* ----------------------------- sidebar ----------------------------- */
 .sidebar {
     position: absolute;
@@ -225,7 +55,7 @@ nav {
     @extend .d-flex, .flex_start;
     height: 89vh;
     padding: 0 8%;
-    background-image: url('Assets/Illustrations_&_Logo/accueil/Pantherhome1..png');
+    background-image: url('../Illustrations_&_Logo/accueil/Pantherhome1.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 40vw 4vw;
@@ -412,7 +242,7 @@ h4 {
 #newsletter {
     @extend .d-flex, .flex_center;
     height: 100vh;
-    background-image: url('Assets/Illustrations_&_Logo/accueil/Pantherhome7.png');
+    background-image: url('../Illustrations_&_Logo/accueil/Pantherhome7.png');
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--darkblue);
@@ -465,94 +295,6 @@ input, textarea {
     border: 1px solid var(--darkblue);
     width: 90%;
     padding: 14px;
-}
-/* -------------------------------------------------------------*/
-
-
-
-//  **************************** FOOTER ***************************************
-footer {
-    @extend .d-flex, .flex_center;
-    background-image: url('Assets/Illustrations_&_Logo/all_pages/back_footer.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80vh;
-
-    // img {
-        
-        // }
-}
-.footer_img {
-    @extend .d-flex, .flex_center;
-    position: relative;
-    // justify-content: center;
-    // align-items: flex-end;
-    height: 75%;
-    width: 25%;
-    
-    // position: relative;
-}
-
-// .bg {
-//     width: 100%;
-// }
-.float {
-    position: absolute;
-    right: 28%;
-    top: 43%;
-    width: 11vw;
-}
-
-footer .container {
-    @extend .d-flex, .d_column, .flex_between;
-    width: 60%;
-    
-}
-.row, .row_2 {
-    width: 80%;
-    // @extend .test4;
-
-}
-
-.row {
-    @extend .d-flex, .flex_between;
-
-    ul {
-        list-style-type: none;
-
-        li {
-            text-transform: uppercase;
-        }
-    }
-    h5 {
-        font-size: 22px;
-        text-transform: uppercase;
-        letter-spacing: 5px;
-        margin-bottom: 1.5vw;
-    }
-    a:hover{
-        text-decoration: underline;
-    }
-}
-.icon {
-    @extend .d-flex, .flex_between;
-}
-
-.row_2 {
-    @extend .d-flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    margin-top: 4vw;
-
-    p , a{
-        font-size: 14px;
-        text-align: center;
-    }
-
-    ul {
-        @extend .d-flex, .flex_evenly;
-        width: 60%;
-    }
 }
 /* -------------------------------------------------------------*/
 
